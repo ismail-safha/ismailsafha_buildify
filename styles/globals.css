@@ -41,7 +41,74 @@ body {
 .start {
   background-color: #ec7427;
   border-radius: 200px 200px 200px 200px;
-  padding: 6px 30px;
-
+  padding: 6px 23px;
   margin: -6px 0;
+}
+.border_title {
+  padding: 0px 0px 0px 16px;
+  border-style: dashed;
+  border-width: 0px 0px 0px 4px;
+  border-color: #ec7427;
+}
+.service_btn {
+  background-color: #ffffff00;
+  border-radius: 200px 200px 200px 200px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #ec7427;
+  padding: 6px 20px;
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+}
+.service_btn:hover {
+  background-color: #ec7427;
+}
+.service_btn:hover span {
+  color: #fff;
+}
+
+.card_item {
+  display: flex;
+
+  gap: 5px;
+  border-radius: 5px;
+}
+.card_item .icon svg {
+  padding: 10px;
+  margin-left: 5px;
+  margin-top: 17px;
+  font-size: 18px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.card_item .info_card {
+  padding: 20px;
+}
+.card_item .info_card h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.card_item .info_card p {
+  font-size: 15px;
+}
+
+/* ===========start CHOOSE US */
+.border_title_aline {
+  border-style: dashed;
+  border-color: #d8d2cd;
+  border-bottom-width: 1px;
+  width: 400px;
+}
+/* =========== */
+
+.choose_img img {
+  object-fit: cover;
+  object-position: center center;
+  opacity: 1;
+  transition-duration: 0.6s;
+  border-radius: 6px 6px 6px 6px;
+}
+.choose_img img:hover {
+  transform: translateY(-10px);
 }

@@ -1,9 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../public/img/logo3.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+
 const Header = () => {
   return (
-    <header className="relative z-30 container mx-auto px-16 py-8 flex justify-between items-center">
+    <header className="relative z-30  py-8 flex justify-between items-center">
       <div className="navbar">
         <ul className="flex gap-[40px]">
           <li className="border-b border-solid  border-[#EC7427]">
@@ -44,12 +48,19 @@ const Header = () => {
       </div>
       <div className="info flex gap-[40px]">
         <Link href="#" className="">
-          <span className=" text-white hover:text-[#EC7427] transition-all duration-300 ease-in-out">
+          <span className=" text-white hover:text-[#EC7427] transition-all duration-300 ease-in-out flex items-center gap-[10px] ">
+            <FontAwesomeIcon
+              icon={faPhone}
+              className="text-[#000] bg-[#EC7427] p-[2px] rounded-[4px]"
+            />
             +88 123 456 789
           </span>
         </Link>
         <Link href="#" className="start">
-          <span>Start a Project</span>
+          <span className="text-[#fff]">
+            <FontAwesomeIcon className="text-[#fff] pr-2" icon={faPaperPlane} />{" "}
+            Start a Project
+          </span>
         </Link>
       </div>
     </header>
