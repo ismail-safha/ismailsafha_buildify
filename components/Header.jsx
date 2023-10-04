@@ -7,7 +7,7 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <header className="relative z-30  py-8 flex justify-between items-center">
+    <header className="relative container mx-auto px-16 z-30  py-8 flex justify-between items-center">
       <div className="navbar">
         <ul className="flex gap-[40px]">
           <li className="border-b border-solid  border-[#EC7427]">

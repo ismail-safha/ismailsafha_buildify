@@ -3,7 +3,7 @@ import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className="relative container mx-auto px-16">
+    <div className="relative ">
       <Header />
       <Component {...pageProps} />
     </div>
