@@ -115,6 +115,7 @@ body {
   left: 136px;
   transform: translateY(10px);
 }
+
 .title_border::before {
   content: "";
   position: absolute;
@@ -124,6 +125,10 @@ body {
   width: 266px;
   right: 132px;
   transform: translateY(10px);
+}
+.testimonials .title_border::before,
+.testimonials .title_border::after {
+  width: 100px !important;
 }
 
 /* =========== */
@@ -145,6 +150,13 @@ body {
   width: 100%;
   object-fit: cover;
   background-image: url(../public/img/banner_footer.jpg);
+  height: 90%;
+}
+.our_testimonials {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  background-image: url(../public/img/testimonials.jpg);
   height: 100%;
 }
 .over_services {
@@ -154,4 +166,24 @@ body {
   width: 100%;
   height: 100%;
 }
+.over_testimonials {
+  position: absolute;
+  z-index: 1;
+  background: #18140f6c;
+  width: 100%;
+  height: 100%;
+}
 /* == end services */
+
+/*  start PROJECTS */
+.our_projects {
+  position: absolute;
+  height: 100%;
+  /* background-image: url(../public/img/city_1.jpg); */
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  transform-origin: center top;
+  transition: 350ms;
+}
+/*  end PROJECTS */

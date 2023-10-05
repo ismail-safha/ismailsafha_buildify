@@ -10,6 +10,11 @@ import choose_img_1 from "../public/img/CHOOSE _img_1.jpg";
 import choose_img_2 from "../public/img/CHOOSE _img_2.jpg";
 import choose_img_3 from "../public/img/CHOOSE _img_3.jpg";
 import buildify_1 from "../public/img/buildify_1.jpg";
+import testimonial_user from "../public/img/testimonial_user.jpg";
+import organizations_1 from "../public/img/organizations_1.png";
+// import city_1 from "../public/img/city_1.jpg";
+
+const city_1 = ["/img/city_1.jpg"];
 
 //font icon
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -207,7 +212,7 @@ const Home = () => {
             clients to understand their unique needs and goals.
           </p>
           {/* cards */}
-          <div className="flex justify-between gap-6 sm:gap-10 pt-6  ">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 pt-6  ">
             {/* item_card_1 */}
             <div className=" ">
               <div className="item_card">
@@ -271,10 +276,253 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            {/* item_card_4 */}
+            <div className=" ">
+              <div className="item_card">
+                <Image src={buildify_1} alt="" className="" />
+                <div className="text-center  bg-white">
+                  <h1 className=" text-[13px] py-[10px] text-[#0C1015]  uppercase hover:text-[#ec7427]  font-[800] ">
+                    Residential Construction
+                  </h1>
+                  <p className="text-center text-[15px]  text-[#777] p-[10px] w-[90%] pb-[20px] m-auto">
+                    raesent commodo cursus magna vel quis risus eget urna mollis
+                    ornare vel eu rutrum faucibus dolor auctor.
+                  </p>
+                  <Link
+                    href="#"
+                    className="service_btn font-bold inline-block my-[20px] "
+                  >
+                    <span className="text-[#000]  ">Service Details </span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* item_card_5 */}
+            <div className=" ">
+              <div className="item_card">
+                <Image src={buildify_1} alt="" className="" />
+                <div className="text-center  bg-white">
+                  <h1 className=" text-[13px] py-[10px] text-[#0C1015]  uppercase hover:text-[#ec7427]  font-[800] ">
+                    Residential Construction
+                  </h1>
+                  <p className="text-center text-[15px]  text-[#777] p-[10px] w-[90%] pb-[20px] m-auto">
+                    raesent commodo cursus magna vel quis risus eget urna mollis
+                    ornare vel eu rutrum faucibus dolor auctor.
+                  </p>
+                  <Link
+                    href="#"
+                    className="service_btn font-bold inline-block my-[20px] "
+                  >
+                    <span className="text-[#000]  ">Service Details </span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* item_card_6 */}
+            <div className=" ">
+              <div className="item_card">
+                <Image src={buildify_1} alt="" className="" />
+                <div className="text-center  bg-white">
+                  <h1 className=" text-[13px] py-[10px] text-[#0C1015]  uppercase hover:text-[#ec7427]  font-[800] ">
+                    Residential Construction
+                  </h1>
+                  <p className="text-center text-[15px]  text-[#777] p-[10px] w-[90%] pb-[20px] m-auto">
+                    raesent commodo cursus magna vel quis risus eget urna mollis
+                    ornare vel eu rutrum faucibus dolor auctor.
+                  </p>
+                  <Link
+                    href="#"
+                    className="service_btn font-bold inline-block my-[20px] "
+                  >
+                    <span className="text-[#000]  ">Service Details </span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="info flex gap-1 items-center justify-center py-[30px]">
+            <Link href="#" className="">
+              <span className=" text-[#000] hover:text-[#EC7427] transition-all duration-300 ease-in-out flex items-center gap-[10px] font-bold ">
+                <FontAwesomeIcon
+                  icon={faPhone}
+                  className="text-[#fff] bg-[#EC7427] p-[2px] rounded-[4px]"
+                />
+                +88 123 456 789
+              </span>
+            </Link>
+            <Link href="#" className="start">
+              <span className="text-[#fff]">
+                <FontAwesomeIcon
+                  className="text-[#fff] pr-2"
+                  icon={faPaperPlane}
+                />
+                Start a Project
+              </span>
+            </Link>
           </div>
         </div>
       </section>
       {/* === end OUR SERVICES */}
+      {/* === start tis */}
+      <section className="relative testimonials -mt-[60px] ">
+        <div className="over_testimonials"></div>
+        <div className="our_testimonials"></div>
+        <div className="relative z-10 container mx-auto px-16 py-[10px]  pt-[60px]">
+          <div className=" bg-white w-[438px] h-[550px] m-auto rounded-[12px]">
+            <div className="text-center  py-[10px]">
+              <span className="title_border  text-[#ec7427] uppercase  font-bold  text-[13px]">
+                TESTIMONIALS
+              </span>
+            </div>
+            <h1 className="text-center text-[20px] p-[5px] text-[#0C1015] font-[800]">
+              What Our Clients Say
+            </h1>
+            <p className="text-center text-[15px]  text-[#777] p-[10px] pb-[30px] m-auto">
+              Our top priority is customer satisfaction, and we work closely
+              with clients to understand their unique needs and goals.
+            </p>
+            {/* card */}
+            <div className="card_testimonials bg-[#fbf3ea] w-[80%] pb-[40px]  m-auto rounded-[12px]">
+              <div className="card_item_testimonials">
+                <div className="img_testimonials p-[10px] pt-[20px]">
+                  <Image
+                    src={testimonial_user}
+                    alt="logo_img"
+                    className=" w-[60px] object-cover m-auto border-[2px] border-[#fff] border-solid rounded-[50%] "
+                  />
+                </div>
+                <p className="text-center text-[15px] font-[600]   text-[#0c1015bf] px-[40px] pb-[10px] m-auto">
+                  Fusce dapibus tellus ac cursus commodo tortor mauris
+                  condimentum nibh ut fermentum massa justo sit amet risus.
+                  Praesent commodo cursus magna, vel scelerisque nisl
+                  consectetur et. Etiam porta sem malesuada magna mollis
+                  euismod.
+                </p>
+                <div className="text-center text-[12px]  text-[#ec7427] font-[800] m-auto">
+                  Luke Colman
+                </div>
+                <div className="text-center text-[15px]  text-[#777]   m-auto">
+                  Director, Streich PLC
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* === end tis */}
+      {/* start  */}
+      <section className="bg-[#fbf3ea] ">
+        <div className="container m-auto px-16 pb-[50px]">
+          <div className=" m-auto text-center p-[20px] pt-[50px] ">
+            <h1 className="text-[#0C1015] text-[15px] font-bold">
+              We have the confidence of hundreds of organizations
+            </h1>
+          </div>
+          <div className=" flex items-center justify-between w-full ">
+            <Image
+              src={organizations_1}
+              alt="logo_img"
+              className="w-[100px] opacity-[0.6] h-[40px]"
+            />
+            <Image
+              src={organizations_1}
+              alt="logo_img"
+              className="w-[100px] opacity-[0.6] h-[40px]"
+            />
+            <Image
+              src={organizations_1}
+              alt="logo_img"
+              className="w-[100px] opacity-[0.6] h-[40px]"
+            />
+            <Image
+              src={organizations_1}
+              alt="logo_img"
+              className="w-[100px] opacity-[0.6] h-[40px]"
+            />
+            <Image
+              src={organizations_1}
+              alt="logo_img"
+              className="w-[100px] opacity-[0.6] h-[40px]"
+            />
+            <Image
+              src={organizations_1}
+              alt="logo_img"
+              className="w-[100px] opacity-[0.6] h-[40px]"
+            />
+          </div>
+        </div>
+      </section>
+      {/* end */}
+      {/* start PROJECTS */}
+      <section className="relative pt-[60px]  testimonials">
+        <div className="text-center  py-[10px]">
+          <span className="title_border  text-[#ec7427] uppercase  font-bold  text-[13px]">
+            RECENT PROJECTS
+          </span>
+        </div>
+        <h1 className="text-center text-[20px]  text-[#0C1015] font-[800]">
+          What We Have Done
+        </h1>
+        <p className="text-center text-[15px]  text-[#777] p-[10px] w-[50%] m-auto">
+          Our top priority is customer satisfaction, and we work closely with
+          clients to understand their unique needs and goals.
+        </p>
+        <div className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 pb-6 px-[10px]  ">
+          <div className="item_ome ">
+            <div className="over_testimonials !w-[300px] rounded-[10px]"></div>
+            <div
+              className="our_projects !w-[300px] rounded-[10px]"
+              // style={{ backgroundImage: "url(/img/city_1.jpg)" }}
+              style={{ backgroundImage: `url(${city_1})` }}
+            ></div>
+            <div className="relative z-10 flex justify-center p-[20px] translate-y-[100%] flex-col items-center text-center ">
+              <h1 className="text-[#fff]">
+                beautiful-night-city-osvitchene-neon-germany-euro{" "}
+              </h1>
+            </div>
+          </div>
+          <div className="item_ome ">
+            <div className="over_testimonials !w-[300px] rounded-[10px]"></div>
+            <div
+              className="our_projects !w-[300px] rounded-[10px]"
+              // style={{ backgroundImage: "url(/img/city_1.jpg)" }}
+              style={{ backgroundImage: `url(${city_1})` }}
+            ></div>
+            <div className="relative z-10 flex justify-center p-[20px] translate-y-[100%] flex-col items-center text-center ">
+              <h1 className="text-[#fff]">
+                beautiful-night-city-osvitchene-neon-germany-euro{" "}
+              </h1>
+            </div>
+          </div>
+          <div className="item_ome ">
+            <div className="over_testimonials !w-[300px] rounded-[10px]"></div>
+            <div
+              className="our_projects !w-[300px] rounded-[10px]"
+              // style={{ backgroundImage: "url(/img/city_1.jpg)" }}
+              style={{ backgroundImage: `url(${city_1})` }}
+            ></div>
+            <div className="relative z-10 flex justify-center p-[20px] translate-y-[100%] flex-col items-center text-center ">
+              <h1 className="text-[#fff]">
+                beautiful-night-city-osvitchene-neon-germany-euro{" "}
+              </h1>
+            </div>
+          </div>
+          <div className="item_ome ">
+            <div className="over_testimonials !w-[300px] rounded-[10px]"></div>
+            <div
+              className="our_projects !w-[300px] rounded-[10px]"
+              // style={{ backgroundImage: "url(/img/city_1.jpg)" }}
+              style={{ backgroundImage: `url(${city_1})` }}
+            ></div>
+            <div className="relative z-10 flex justify-center p-[20px] translate-y-[100%] flex-col items-center text-center ">
+              <h1 className="text-[#fff]">
+                beautiful-night-city-osvitchene-neon-germany-euro{" "}
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* end PROJECTS */}
     </section>
   );
 };
