@@ -12,9 +12,11 @@ import choose_img_3 from "../public/img/CHOOSE _img_3.jpg";
 import buildify_1 from "../public/img/buildify_1.jpg";
 import testimonial_user from "../public/img/testimonial_user.jpg";
 import organizations_1 from "../public/img/organizations_1.png";
-// import city_1 from "../public/img/city_1.jpg";
-
-const city_1 = ["/img/city_1.jpg"];
+import city_1 from "../public/img/city_1.jpg";
+import blog_img_1 from "../public/img/blog_img_1.jpg";
+import blog_main_img from "../public/img/blog_main_img.jpg";
+import tem_1 from "../public/img/tem_1.jpg";
+import logo from "../public/img/logo3.png";
 
 //font icon
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,6 +26,7 @@ import { faLayerGroup } from "@fortawesome/free-solid-svg-icons";
 import { faVectorSquare } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
   return (
@@ -454,7 +457,7 @@ const Home = () => {
       </section>
       {/* end */}
       {/* start PROJECTS */}
-      <section className="relative pt-[60px]  testimonials">
+      <section className="relative projects pt-[60px]  testimonials">
         <div className="text-center  py-[10px]">
           <span className="title_border  text-[#ec7427] uppercase  font-bold  text-[13px]">
             RECENT PROJECTS
@@ -468,61 +471,325 @@ const Home = () => {
           clients to understand their unique needs and goals.
         </p>
         <div className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 pb-6 px-[10px]  ">
-          <div className="item_ome ">
-            <div className="over_testimonials !w-[300px] rounded-[10px]"></div>
-            <div
-              className="our_projects !w-[300px] rounded-[10px]"
-              // style={{ backgroundImage: "url(/img/city_1.jpg)" }}
-              style={{ backgroundImage: `url(${city_1})` }}
-            ></div>
-            <div className="relative z-10 flex justify-center p-[20px] translate-y-[100%] flex-col items-center text-center ">
-              <h1 className="text-[#fff]">
-                beautiful-night-city-osvitchene-neon-germany-euro{" "}
+          <div className="item_ome m-auto ">
+            <div className="w-[300px] relative group overflow-hidden">
+              <Image
+                src={city_1}
+                alt="logo_img"
+                className="h-[300px] w-full object-cover rounded-[10px] brightness-50 group-hover:filter-none transition-filter duration-300 ease-in-out "
+              />
+              <h1 className="title_img absolute z-10 top-[10px] text-center py-[124px] m-auto inline-block text-[#fff] text-[18px] font-bold transition-transform duration-300 ease-in-out transform-gpu group-hover:scale-110 group-hover:opacity-0">
+                beautiful-night-city-osvitchene-neon-germany-euro
               </h1>
             </div>
           </div>
-          <div className="item_ome ">
-            <div className="over_testimonials !w-[300px] rounded-[10px]"></div>
-            <div
-              className="our_projects !w-[300px] rounded-[10px]"
-              // style={{ backgroundImage: "url(/img/city_1.jpg)" }}
-              style={{ backgroundImage: `url(${city_1})` }}
-            ></div>
-            <div className="relative z-10 flex justify-center p-[20px] translate-y-[100%] flex-col items-center text-center ">
-              <h1 className="text-[#fff]">
-                beautiful-night-city-osvitchene-neon-germany-euro{" "}
+          <div className="item_ome m-auto">
+            <div className="w-[300px] relative group overflow-hidden">
+              <Image
+                src={city_1}
+                alt="logo_img"
+                className="h-[300px] w-full object-cover rounded-[10px] brightness-50 group-hover:filter-none transition-filter duration-300 ease-in-out "
+              />
+              <h1 className="title_img absolute z-10 top-[10px] text-center py-[124px] m-auto inline-block text-[#fff] text-[18px] font-bold transition-transform duration-300 ease-in-out transform-gpu group-hover:scale-110 group-hover:opacity-0">
+                beautiful-night-city-osvitchene-neon-germany-euro
               </h1>
             </div>
           </div>
-          <div className="item_ome ">
-            <div className="over_testimonials !w-[300px] rounded-[10px]"></div>
-            <div
-              className="our_projects !w-[300px] rounded-[10px]"
-              // style={{ backgroundImage: "url(/img/city_1.jpg)" }}
-              style={{ backgroundImage: `url(${city_1})` }}
-            ></div>
-            <div className="relative z-10 flex justify-center p-[20px] translate-y-[100%] flex-col items-center text-center ">
-              <h1 className="text-[#fff]">
-                beautiful-night-city-osvitchene-neon-germany-euro{" "}
+          <div className="item_ome m-auto">
+            <div className="w-[300px] relative group overflow-hidden">
+              <Image
+                src={city_1}
+                alt="logo_img"
+                className="h-[300px] w-full object-cover rounded-[10px] brightness-50 group-hover:filter-none transition-filter duration-300 ease-in-out "
+              />
+              <h1 className="title_img absolute z-10 top-[10px] text-center py-[124px] m-auto inline-block text-[#fff] text-[18px] font-bold transition-transform duration-300 ease-in-out transform-gpu group-hover:scale-110 group-hover:opacity-0">
+                beautiful-night-city-osvitchene-neon-germany-euro
               </h1>
             </div>
           </div>
-          <div className="item_ome ">
-            <div className="over_testimonials !w-[300px] rounded-[10px]"></div>
-            <div
-              className="our_projects !w-[300px] rounded-[10px]"
-              // style={{ backgroundImage: "url(/img/city_1.jpg)" }}
-              style={{ backgroundImage: `url(${city_1})` }}
-            ></div>
-            <div className="relative z-10 flex justify-center p-[20px] translate-y-[100%] flex-col items-center text-center ">
-              <h1 className="text-[#fff]">
-                beautiful-night-city-osvitchene-neon-germany-euro{" "}
+          <div className="item_ome m-auto">
+            <div className="w-[300px] relative group overflow-hidden">
+              <Image
+                src={city_1}
+                alt="logo_img"
+                className="h-[300px] w-full object-cover rounded-[10px] brightness-50 group-hover:filter-none transition-filter duration-300 ease-in-out "
+              />
+              <h1 className="title_img absolute z-10 top-[10px] text-center py-[124px] m-auto inline-block text-[#fff] text-[18px] font-bold transition-transform duration-300 ease-in-out transform-gpu group-hover:scale-110 group-hover:opacity-0">
+                beautiful-night-city-osvitchene-neon-germany-euro
               </h1>
             </div>
           </div>
         </div>
+        <div className="info flex gap-1 items-center justify-center py-[30px]">
+          <Link href="#" className="">
+            <span className=" text-[#000] hover:text-[#EC7427] transition-all duration-300 ease-in-out flex items-center gap-[10px] font-bold ">
+              <FontAwesomeIcon
+                icon={faPhone}
+                className="text-[#fff] bg-[#EC7427] p-[2px] rounded-[4px]"
+              />
+              +88 123 456 789
+            </span>
+          </Link>
+          <Link href="#" className="start">
+            <span className="text-[#fff]">
+              <FontAwesomeIcon
+                className="text-[#fff] pr-2"
+                icon={faPaperPlane}
+              />
+              Start a Project
+            </span>
+          </Link>
+        </div>
       </section>
       {/* end PROJECTS */}
+      {/* start BLOG  */}
+      <section className="relative projects pt-[60px] container m-auto px-16 testimonials flex justify-between gap-[20px] w-full">
+        <div className="w-[50%]">
+          <div className="text-center  py-[10px]">
+            <span className="title_border  text-[#ec7427] uppercase  font-bold  text-[13px]">
+              OUR BLOG
+            </span>
+          </div>
+          <h1 className="text-left text-[20px]  text-[#0C1015] font-[800]">
+            Recent Posts
+          </h1>
+          <p className="text-left text-[15px]  text-[#777] pt-[10px]  m-auto">
+            Curabitur blandit tempus porttitor. Praesent commodo cursus magna,
+            vel scelerisque nisl consectetur et.
+          </p>
+          <div className="item_blog pt-[20px] flex flex-wrap gap-[20px] ">
+            <div className="items_blog">
+              <Link href="#">
+                <div className="item_blog_img  h-[170px] w-[250px]">
+                  <Image
+                    src={blog_img_1}
+                    alt="logo_img"
+                    className=" w-full object-cover rounded-[10px] "
+                  />
+                </div>
+              </Link>
+              <Link href="#">
+                <h1 className="text-left text-[12px] w-[220px]  text-[#0C1015] hover:text-[#ec7427] font-[800]">
+                  Innovative solutions for effective site planning and design
+                </h1>
+              </Link>
+              <p className="text-left text-[15px]  text-[#777] pt-[10px]  m-auto">
+                July 13, 2023
+              </p>
+            </div>
+            <div className="items_blog">
+              <Link href="#">
+                <div className="item_blog_img  h-[170px] w-[250px]">
+                  <Image
+                    src={blog_img_1}
+                    alt="logo_img"
+                    className=" w-full object-cover rounded-[10px] "
+                  />
+                </div>
+              </Link>
+              <Link href="#">
+                <h1 className="text-left text-[12px] w-[220px]  text-[#0C1015] hover:text-[#ec7427] font-[800]">
+                  Innovative solutions for effective site planning and design
+                </h1>
+              </Link>
+              <p className="text-left text-[15px]  text-[#777] pt-[10px]  m-auto">
+                July 13, 2023
+              </p>
+            </div>
+            <div className="items_blog">
+              <Link href="#">
+                <div className="item_blog_img  h-[170px] w-[250px]">
+                  <Image
+                    src={blog_img_1}
+                    alt="logo_img"
+                    className=" w-full object-cover rounded-[10px] "
+                  />
+                </div>
+              </Link>
+              <Link href="#">
+                <h1 className="text-left text-[12px] w-[220px]  text-[#0C1015] hover:text-[#ec7427] font-[800]">
+                  Innovative solutions for effective site planning and design
+                </h1>
+              </Link>
+              <p className="text-left text-[15px]  text-[#777] pt-[10px]  m-auto">
+                July 13, 2023
+              </p>
+            </div>
+            <div className="items_blog">
+              <Link href="#">
+                <div className="item_blog_img  h-[170px] w-[250px]">
+                  <Image
+                    src={blog_img_1}
+                    alt="logo_img"
+                    className=" w-full object-cover rounded-[10px] "
+                  />
+                </div>
+              </Link>
+              <Link href="#">
+                <h1 className="text-left text-[12px] w-[220px]  text-[#0C1015] hover:text-[#ec7427] font-[800]">
+                  Innovative solutions for effective site planning and design
+                </h1>
+              </Link>
+              <p className="text-left text-[15px]  text-[#777] pt-[10px]  m-auto">
+                July 13, 2023
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="w-[50%]">
+          <div className="main_img w-[600px] relative">
+            <Image
+              src={blog_main_img}
+              alt="logo_img"
+              className=" w-full object-cover rounded-[10px] bg-center h-[650px] "
+            />
+            <div className="absolute bottom-[7px] left-[11px] bg-black rounded-[10px] w-[150px] text-center">
+              <div className=" text-[#ec7427] uppercase  font-bold  text-[30px] pt-[10px]">
+                12+
+              </div>
+              <div className="text-[12px]  text-[#777] font-bold pb-[10px]">
+                Years of Experience
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* end BLOG  */}
+      {/* start vision  */}
+      <section className="relative testimonials vision pt-[60px] ">
+        <div className="our_testimonials"></div>
+        <div className="relative z-10 container mx-auto px-16 py-[10px]  pt-[60px]">
+          <div className="text-center  py-[10px]">
+            <span className="title_border  text-[#ec7427] uppercase  font-bold  text-[13px]">
+              BRING YOUR VISION TO LIFE.
+            </span>
+          </div>
+          <div className="text-center m-auto  w-[500px]">
+            <h1 className=" text-[20px] p-[5px] text-[#fff] font-[800]">
+              Get started on your dream construction project today.
+            </h1>
+          </div>
+          <div className="info flex gap-[10px] items-center justify-center py-[30px]">
+            <Link href="#" className="">
+              <span className=" text-[#fff] hover:text-[#EC7427] transition-all duration-300 ease-in-out flex items-center gap-[10px] font-bold ">
+                <FontAwesomeIcon
+                  icon={faPhone}
+                  className="text-[#fff] bg-[#EC7427] p-[2px] rounded-[4px]"
+                />
+                +88 123 456 789
+              </span>
+            </Link>
+            <Link href="#" className="start">
+              <span className="text-[#fff]">
+                <FontAwesomeIcon
+                  className="text-[#fff] pr-2"
+                  icon={faPaperPlane}
+                />
+                Start a Project
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+      {/* end vision  */}
+      {/* start footer */}
+      <section className="footer relative  bg-[#0c1015] text-[#fff]">
+        <div className="flex items-center justify-center pt-[60px] pb-[20px]">
+          <FontAwesomeIcon
+            className="text-[#fff] pr-2 text-[30px]"
+            icon={faInstagram}
+          />
+          <span>Follow us on Instagram</span>
+        </div>
+        <div className="container m-auto px-16 pb-[60px] ">
+          <div className="grid grid-cols-4 md:grid-cols-4 xl:grid-cols-8 gap-[10px]">
+            <div className="overflow-hidden rounded-[10px]">
+              <Image
+                src={tem_1}
+                alt="logo_img"
+                className=" rounded-[10px] object-cover max-w-full w-[170px] h-[150px] duration-300 ease-in-out hover:scale-110"
+              />
+            </div>
+            <div className="overflow-hidden rounded-[10px]">
+              <Image
+                src={tem_1}
+                alt="logo_img"
+                className=" rounded-[10px] object-cover max-w-full w-[170px] h-[150px] duration-300 ease-in-out hover:scale-110"
+              />
+            </div>
+            <div className="overflow-hidden rounded-[10px]">
+              <Image
+                src={tem_1}
+                alt="logo_img"
+                className=" rounded-[10px] object-cover max-w-full w-[170px] h-[150px] duration-300 ease-in-out hover:scale-110"
+              />
+            </div>
+            <div className="overflow-hidden rounded-[10px]">
+              <Image
+                src={tem_1}
+                alt="logo_img"
+                className=" rounded-[10px] object-cover max-w-full w-[170px] h-[150px] duration-300 ease-in-out hover:scale-110"
+              />
+            </div>
+            <div className="overflow-hidden rounded-[10px]">
+              <Image
+                src={tem_1}
+                alt="logo_img"
+                className=" rounded-[10px] object-cover max-w-full w-[170px] h-[150px] duration-300 ease-in-out hover:scale-110"
+              />
+            </div>
+            <div className="overflow-hidden rounded-[10px]">
+              <Image
+                src={tem_1}
+                alt="logo_img"
+                className=" rounded-[10px] object-cover max-w-full w-[170px] h-[150px] duration-300 ease-in-out hover:scale-110"
+              />
+            </div>
+            <div className="overflow-hidden rounded-[10px]">
+              <Image
+                src={tem_1}
+                alt="logo_img"
+                className=" rounded-[10px] object-cover max-w-full w-[170px] h-[150px] duration-300 ease-in-out hover:scale-110"
+              />
+            </div>
+            <div className="overflow-hidden rounded-[10px]">
+              <Image
+                src={tem_1}
+                alt="logo_img"
+                className=" rounded-[10px] object-cover max-w-full w-[170px] h-[150px] duration-300 ease-in-out hover:scale-110"
+              />
+            </div>
+          </div>
+        </div>
+        {/* start main_footer */}
+        <footer className="container m-auto px-16 pb-[40px]">
+          <div className="grid grid-cols-1   xl:grid-cols-4 gap-[10px]">
+            <div className="">
+              {/* logo */}
+              <Link href="#">
+                <Image
+                  src={logo}
+                  alt="logo_img"
+                  className="h-[90px] w-[90px]"
+                />
+              </Link>
+            </div>
+            {/* === */}
+            <div className="">
+              <h1>Our Services</h1>
+            </div>
+            {/* === */}
+            <div className="">
+              <h1>Information</h1>
+            </div>
+            {/* === */}
+            <div className="">
+              <Link href="#">SERVICE INQUIRY</Link>
+            </div>
+          </div>
+        </footer>
+        {/* end main_footer */}
+      </section>
     </section>
   );
 };
