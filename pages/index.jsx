@@ -29,10 +29,37 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
+import { useEffect, useState } from "react";
+
 const Home = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section className="overflow-hidden relative">
       <Header />
@@ -959,6 +986,19 @@ const Home = () => {
         </footer>
         {/* end main_footer */}
       </section>
+
+      {/* scrool top */}
+
+      <button
+        className={`fixed bottom-4 right-4 z-[100] ${
+          isVisible ? "block" : "hidden"
+        }`}
+        onClick={scrollToTop}
+      >
+        <div className="bg-[#ec7427] inline-block p-[10px] rounded-[16px]">
+          <FontAwesomeIcon icon={faArrowUp} className="text-[25px]" />
+        </div>
+      </button>
     </section>
   );
 };
