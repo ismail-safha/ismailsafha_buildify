@@ -25,20 +25,26 @@ import { faUsersGear } from "@fortawesome/free-solid-svg-icons";
 import { faLayerGroup } from "@fortawesome/free-solid-svg-icons";
 import { faVectorSquare } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
   return (
-    <section>
+    <section className="overflow-hidden relative">
+      <Header />
+
       <div className="relative banner ">
         <div className="over"></div>
         <Image src={img2} alt="" className="" />
       </div>
       {/* =======start banner */}
-      <main className="relative container mx-auto px-16 z-50  pt-[60px] flex flex-col gap-[100px] ">
+      <main className="relative container mx-auto px-16 max-lg:px-2 z-50  pt-[60px] flex flex-col gap-[100px] ">
         {/* one */}
-        <div className="flex flex-col gap-[40px] w-[60%]">
+        <div className="flex flex-col gap-[40px] w-[60%] max-md:w-full max-md:m-auto ">
           <div className="border_title">
             <h1 className="text-[#fff] text-[50px] font-[700] uppercase  leading-[1em]">
               Building your vision, brick by brick.
@@ -49,7 +55,7 @@ const Home = () => {
             our clients. Our team of experienced professionals loves making
             structures that are high-quality, useful, and nice to look at.
           </p>
-          <div className=" flex items-center gap-[15px]">
+          <div className=" flex items-center gap-[15px] max-sm:flex-col max-sm:gap-y-[20px]">
             <Link href="#" className="service_btn ">
               <span className="text-[#fff]">Our Services</span>
             </Link>
@@ -65,8 +71,8 @@ const Home = () => {
           </div>
         </div>
         {/* tow */}
-        <div className="card flex items-center justify-between mt-[70px] gap-[15px]">
-          <div className="card_item bg-[#ec7427]">
+        <div className="card grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  items-center  mt-[70px] max-sm:mt-0  gap-[15px]">
+          <div className="card_item bg-[#ec7427] ">
             <div className="icon">
               <FontAwesomeIcon
                 icon={faUsersGear}
@@ -81,7 +87,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="card_item bg-[#ec7427]">
+          <div className="card_item bg-[#ec7427] ">
             <div className="icon">
               <FontAwesomeIcon
                 icon={faLayerGroup}
@@ -96,7 +102,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="card_item bg-[#ec7427]">
+          <div className="card_item bg-[#ec7427] ">
             <div className="icon">
               <FontAwesomeIcon
                 icon={faVectorSquare}
@@ -115,9 +121,9 @@ const Home = () => {
       </main>
       {/* end Banner */}
       {/* === Start CHOOSE US=== */}
-      <section className="relative container mx-auto px-16 py-[80px] flex gap-[20px]">
+      <section className="relative container mx-auto px-16 max-lg:px-2 py-[80px] pb-[8px] flex gap-[20px] flex-wrap">
         {/* one */}
-        <div className="w-[40%]">
+        <div className="w-[40%] max-lg:w-[100%] m-auto">
           <div className="flex items-center pb-[10px]">
             <div className="border_title_aline"></div>
             <span className="text-[#ec7427] uppercase w-[100%] font-bold text-center text-[13px]">
@@ -136,7 +142,7 @@ const Home = () => {
               project. Our commitment to safety, quality, and customer
               satisfaction sets us apart from the competition.{" "}
             </p>
-            <ul className="text-[#494B4F] text-[16px]">
+            <ul className="text-[#494B4F] text-[16px] ">
               <li>
                 <FontAwesomeIcon
                   icon={faCircleCheck}
@@ -159,7 +165,7 @@ const Home = () => {
                 Time savings through effective project management
               </li>
             </ul>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 max-sm:flex-col max-sm:gap-y-[20px]">
               <Link href="#" className="service_btn font-bold ">
                 <span className="text-[#000]  ">MORE ABOUT US</span>
               </Link>
@@ -176,22 +182,22 @@ const Home = () => {
           </div>
         </div>
         {/* tow */}
-        <div className="w-[60%]">
-          <div className="flex justify-between items-end choose_img gap-[10px] ">
+        <div className="w-[56%] max-lg:w-[100%] m-auto">
+          <div className="flex  items-end choose_img gap-[10px] max-md:flex-wrap ">
             <Image
               src={choose_img_1}
               alt="logo_img"
-              className="w-[221.181px] h-[380px]"
+              className="w-[221.181px] h-[380px] max-md:h-[380px] max-md:w-[50%] max-sm:w-[100%]"
             />
             <Image
               src={choose_img_2}
               alt="logo_img"
-              className="w-[221.181px] h-[450px]"
-            />
+              className="w-[221.181px] h-[450px] max-md:h-[380px] max-md:w-[48%] max-sm:w-[100%]"
+            />{" "}
             <Image
               src={choose_img_3}
               alt="logo_img"
-              className="w-[221.181px] h-[520px]"
+              className="w-[221.181px] h-[520px] max-md:h-[380px] max-md:w-[100%] max-sm:w-[100%]"
             />
           </div>
         </div>
@@ -201,7 +207,7 @@ const Home = () => {
       <section className=" relative py-[80px]  ">
         <div className="over_services"></div>
         <div className="our_services"></div>
-        <div className="relative z-10 container mx-auto px-16 py-[10px]  pt-[60px]">
+        <div className="relative z-10 container mx-auto px-16 max-lg:px-2 py-[10px]  pt-[60px]">
           <div className="text-center  py-[10px]">
             <span className="title_border text-[#ec7427] uppercase  font-bold  text-[13px]">
               OUR SERVICES
@@ -370,8 +376,8 @@ const Home = () => {
       <section className="relative testimonials -mt-[60px] ">
         <div className="over_testimonials"></div>
         <div className="our_testimonials"></div>
-        <div className="relative z-10 container mx-auto px-16 py-[10px]  pt-[60px]">
-          <div className=" bg-white w-[438px] h-[550px] m-auto rounded-[12px]">
+        <div className="relative z-10 container mx-auto px-16 max-lg:px-2 py-[10px]  pt-[60px]">
+          <div className=" bg-white w-[438px] h-[600px] m-auto rounded-[12px] max-sm:w-auto">
             <div className="text-center  py-[10px]">
               <span className="title_border  text-[#ec7427] uppercase  font-bold  text-[13px]">
                 TESTIMONIALS
@@ -385,7 +391,7 @@ const Home = () => {
               with clients to understand their unique needs and goals.
             </p>
             {/* card */}
-            <div className="card_testimonials bg-[#fbf3ea] w-[80%] pb-[40px]  m-auto rounded-[12px]">
+            <div className="card_testimonials bg-[#fbf3ea] w-[80%] pb-[40px]  m-auto rounded-[12px] ">
               <div className="card_item_testimonials">
                 <div className="img_testimonials p-[10px] pt-[20px]">
                   <Image
@@ -415,13 +421,13 @@ const Home = () => {
       {/* === end tis */}
       {/* start  */}
       <section className="bg-[#fbf3ea] ">
-        <div className="container m-auto px-16 pb-[50px]">
+        <div className="container m-auto px-16 max-lg:px-2 pb-[50px]">
           <div className=" m-auto text-center p-[20px] pt-[50px] ">
             <h1 className="text-[#0C1015] text-[15px] font-bold">
               We have the confidence of hundreds of organizations
             </h1>
           </div>
-          <div className=" flex items-center justify-between w-full ">
+          <div className=" flex items-center justify-between w-full flex-wrap m-auto gap-[10px] ">
             <Image
               src={organizations_1}
               alt="logo_img"
@@ -466,13 +472,13 @@ const Home = () => {
         <h1 className="text-center text-[20px]  text-[#0C1015] font-[800]">
           What We Have Done
         </h1>
-        <p className="text-center text-[15px]  text-[#777] p-[10px] w-[50%] m-auto">
+        <p className="text-center text-[15px]  text-[#777] p-[10px] w-[50%] max-lg:w-full m-auto">
           Our top priority is customer satisfaction, and we work closely with
           clients to understand their unique needs and goals.
         </p>
         <div className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 pb-6 px-[10px]  ">
           <div className="item_ome m-auto ">
-            <div className="w-[300px] relative group overflow-hidden">
+            <div className=" w-auto relative group overflow-hidden">
               <Image
                 src={city_1}
                 alt="logo_img"
@@ -484,7 +490,7 @@ const Home = () => {
             </div>
           </div>
           <div className="item_ome m-auto">
-            <div className="w-[300px] relative group overflow-hidden">
+            <div className=" w-auto relative group overflow-hidden">
               <Image
                 src={city_1}
                 alt="logo_img"
@@ -496,7 +502,7 @@ const Home = () => {
             </div>
           </div>
           <div className="item_ome m-auto">
-            <div className="w-[300px] relative group overflow-hidden">
+            <div className="w-auto relative group overflow-hidden">
               <Image
                 src={city_1}
                 alt="logo_img"
@@ -508,7 +514,7 @@ const Home = () => {
             </div>
           </div>
           <div className="item_ome m-auto">
-            <div className="w-[300px] relative group overflow-hidden">
+            <div className="w-auto relative group overflow-hidden">
               <Image
                 src={city_1}
                 alt="logo_img"
@@ -520,7 +526,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="info flex gap-1 items-center justify-center py-[30px]">
+        <div className="info flex gap-1 items-center justify-center py-[30px] max-sm:flex-col max-sm:gap-y-[20px] ">
           <Link href="#" className="">
             <span className=" text-[#000] hover:text-[#EC7427] transition-all duration-300 ease-in-out flex items-center gap-[10px] font-bold ">
               <FontAwesomeIcon
@@ -543,24 +549,24 @@ const Home = () => {
       </section>
       {/* end PROJECTS */}
       {/* start BLOG  */}
-      <section className="relative projects pt-[60px] container m-auto px-16 testimonials flex justify-between gap-[20px] w-full">
-        <div className="w-[50%]">
+      <section className="relative projects pt-[60px] container m-auto px-16 max-lg:px-2 testimonials flex justify-between flex-wrap gap-[20px] ">
+        <div className="w-[48%] max-lg:w-[100%]">
           <div className="text-center  py-[10px]">
             <span className="title_border  text-[#ec7427] uppercase  font-bold  text-[13px]">
               OUR BLOG
             </span>
           </div>
-          <h1 className="text-left text-[20px]  text-[#0C1015] font-[800]">
+          <h1 className="text-left text-[20px]  text-[#0C1015] font-[800] max-lg:text-center max-lg:m-auto">
             Recent Posts
           </h1>
-          <p className="text-left text-[15px]  text-[#777] pt-[10px]  m-auto">
+          <p className="text-left text-[15px]  text-[#777] pt-[10px]  m-auto max-lg:text-center max-lg:m-auto">
             Curabitur blandit tempus porttitor. Praesent commodo cursus magna,
             vel scelerisque nisl consectetur et.
           </p>
-          <div className="item_blog pt-[20px] flex flex-wrap gap-[20px] ">
+          <div className="item_blog pt-[20px] flex flex-wrap gap-[20px] max-lg:justify-center ">
             <div className="items_blog">
               <Link href="#">
-                <div className="item_blog_img  h-[170px] w-[250px]">
+                <div className="item_blog_img  h-[170px] w-[250px] max-lg:w-[300px] max-lg:h-[200px]">
                   <Image
                     src={blog_img_1}
                     alt="logo_img"
@@ -579,7 +585,7 @@ const Home = () => {
             </div>
             <div className="items_blog">
               <Link href="#">
-                <div className="item_blog_img  h-[170px] w-[250px]">
+                <div className="item_blog_img  h-[170px] w-[250px] max-lg:w-[300px] max-lg:h-[200px]">
                   <Image
                     src={blog_img_1}
                     alt="logo_img"
@@ -598,7 +604,7 @@ const Home = () => {
             </div>
             <div className="items_blog">
               <Link href="#">
-                <div className="item_blog_img  h-[170px] w-[250px]">
+                <div className="item_blog_img  h-[170px] w-[250px] max-lg:w-[300px] max-lg:h-[200px]">
                   <Image
                     src={blog_img_1}
                     alt="logo_img"
@@ -617,7 +623,7 @@ const Home = () => {
             </div>
             <div className="items_blog">
               <Link href="#">
-                <div className="item_blog_img  h-[170px] w-[250px]">
+                <div className="item_blog_img  h-[170px] w-[250px] max-lg:w-[300px] max-lg:h-[200px]">
                   <Image
                     src={blog_img_1}
                     alt="logo_img"
@@ -636,8 +642,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="w-[50%]">
-          <div className="main_img w-[600px] relative">
+        <div className="w-[50%] max-lg:w-[100%]">
+          <div className="main_img w-[600px] relative max-lg:m-auto max-lg:w-full ">
             <Image
               src={blog_main_img}
               alt="logo_img"
@@ -658,18 +664,18 @@ const Home = () => {
       {/* start vision  */}
       <section className="relative testimonials vision pt-[60px] ">
         <div className="our_testimonials"></div>
-        <div className="relative z-10 container mx-auto px-16 py-[10px]  pt-[60px]">
+        <div className="relative z-10 container mx-auto px-16 max-lg:px-2 py-[10px]  pt-[60px]">
           <div className="text-center  py-[10px]">
-            <span className="title_border  text-[#ec7427] uppercase  font-bold  text-[13px]">
+            <span className="title_border  text-[#ec7427] uppercase  font-bold  text-[13px] text-center m-auto">
               BRING YOUR VISION TO LIFE.
             </span>
           </div>
-          <div className="text-center m-auto  w-[500px]">
-            <h1 className=" text-[20px] p-[5px] text-[#fff] font-[800]">
+          <div className="text-center m-auto  ">
+            <h1 className=" text-[20px] p-[5px] text-[#fff] font-[800] text-center m-auto">
               Get started on your dream construction project today.
             </h1>
           </div>
-          <div className="info flex gap-[10px] items-center justify-center py-[30px]">
+          <div className="info flex gap-[10px] items-center justify-center py-[30px] max-sm:flex-col ">
             <Link href="#" className="">
               <span className=" text-[#fff] hover:text-[#EC7427] transition-all duration-300 ease-in-out flex items-center gap-[10px] font-bold ">
                 <FontAwesomeIcon
@@ -701,90 +707,253 @@ const Home = () => {
           />
           <span>Follow us on Instagram</span>
         </div>
-        <div className="container m-auto px-16 pb-[60px] ">
-          <div className="grid grid-cols-4 md:grid-cols-4 xl:grid-cols-8 gap-[10px]">
-            <div className="overflow-hidden rounded-[10px]">
+        <div className="container m-auto px-16 max-lg:px-2  pb-[60px] ">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-[10px] m-auto ">
+            <div className="overflow-hidden rounded-[10px] m-auto w-auto  ">
               <Image
                 src={tem_1}
                 alt="logo_img"
-                className=" rounded-[10px] object-cover max-w-full w-[170px] h-[150px] duration-300 ease-in-out hover:scale-110"
+                className=" rounded-[10px] object-cover max-w-full  h-[150px] duration-300 ease-in-out hover:scale-110  m-auto w-auto"
               />
             </div>
-            <div className="overflow-hidden rounded-[10px]">
+            <div className="overflow-hidden rounded-[10px] m-auto ">
               <Image
                 src={tem_1}
                 alt="logo_img"
-                className=" rounded-[10px] object-cover max-w-full w-[170px] h-[150px] duration-300 ease-in-out hover:scale-110"
+                className=" rounded-[10px] object-cover max-w-full  h-[150px] duration-300 ease-in-out hover:scale-110 m-auto w-auto"
               />
             </div>
-            <div className="overflow-hidden rounded-[10px]">
+            <div className="overflow-hidden rounded-[10px] m-auto ">
               <Image
                 src={tem_1}
                 alt="logo_img"
-                className=" rounded-[10px] object-cover max-w-full w-[170px] h-[150px] duration-300 ease-in-out hover:scale-110"
+                className=" rounded-[10px] object-cover max-w-full  h-[150px] duration-300 ease-in-out hover:scale-110 m-auto w-auto"
               />
             </div>
-            <div className="overflow-hidden rounded-[10px]">
+            <div className="overflow-hidden rounded-[10px] m-auto ">
               <Image
                 src={tem_1}
                 alt="logo_img"
-                className=" rounded-[10px] object-cover max-w-full w-[170px] h-[150px] duration-300 ease-in-out hover:scale-110"
+                className=" rounded-[10px] object-cover max-w-full  h-[150px] duration-300 ease-in-out hover:scale-110 m-auto w-auto"
               />
             </div>
-            <div className="overflow-hidden rounded-[10px]">
+            <div className="overflow-hidden rounded-[10px] m-auto ">
               <Image
                 src={tem_1}
                 alt="logo_img"
-                className=" rounded-[10px] object-cover max-w-full w-[170px] h-[150px] duration-300 ease-in-out hover:scale-110"
+                className=" rounded-[10px] object-cover max-w-full  h-[150px] duration-300 ease-in-out hover:scale-110 m-auto w-auto"
               />
             </div>
-            <div className="overflow-hidden rounded-[10px]">
+            <div className="overflow-hidden rounded-[10px] m-auto ">
               <Image
                 src={tem_1}
                 alt="logo_img"
-                className=" rounded-[10px] object-cover max-w-full w-[170px] h-[150px] duration-300 ease-in-out hover:scale-110"
-              />
-            </div>
-            <div className="overflow-hidden rounded-[10px]">
-              <Image
-                src={tem_1}
-                alt="logo_img"
-                className=" rounded-[10px] object-cover max-w-full w-[170px] h-[150px] duration-300 ease-in-out hover:scale-110"
-              />
-            </div>
-            <div className="overflow-hidden rounded-[10px]">
-              <Image
-                src={tem_1}
-                alt="logo_img"
-                className=" rounded-[10px] object-cover max-w-full w-[170px] h-[150px] duration-300 ease-in-out hover:scale-110"
+                className=" rounded-[10px] object-cover max-w-full  h-[150px] duration-300 ease-in-out hover:scale-110 m-auto w-auto"
               />
             </div>
           </div>
         </div>
         {/* start main_footer */}
-        <footer className="container m-auto px-16 pb-[40px]">
-          <div className="grid grid-cols-1   xl:grid-cols-4 gap-[10px]">
-            <div className="">
+        <footer className="container m-auto px-16 max-lg:px-2  pb-[40px]">
+          <div className="grid grid-cols-1 max-lg:justify-center   xl:grid-cols-4 gap-[10px]">
+            <div className="flex flex-col gap-6">
               {/* logo */}
-              <Link href="#">
+              <Link href="#" className="max-lg:m-auto">
                 <Image
                   src={logo}
                   alt="logo_img"
                   className="h-[90px] w-[90px]"
                 />
               </Link>
+              <div className="icons flex gap-2 max-lg:m-auto">
+                <Link
+                  href="#"
+                  className="px-[5px] py-[2px] bg-[#ec7427] rounded-[4px]"
+                >
+                  <FontAwesomeIcon icon={faFacebook} className=" text-[#fff]" />
+                </Link>
+                <Link
+                  href="#"
+                  className="px-[5px] py-[2px] bg-[#ec7427] rounded-[4px]"
+                >
+                  <FontAwesomeIcon icon={faFacebook} className=" text-[#fff]" />
+                </Link>
+                <Link
+                  href="#"
+                  className="px-[5px] py-[2px] bg-[#ec7427] rounded-[4px]"
+                >
+                  <FontAwesomeIcon icon={faFacebook} className=" text-[#fff]" />
+                </Link>
+              </div>
+              <div className="text-[#FFFFFFD1] max-lg:m-auto max-lg:text-center">
+                <p>
+                  &copy;{" "}
+                  <span>
+                    2023{" "}
+                    <Link href="" className="text-[#ec7427] font-bold">
+                      ismailsafha
+                    </Link>
+                    . All rights reserved.
+                  </span>
+                </p>
+              </div>
             </div>
             {/* === */}
-            <div className="">
+            <div className="max-lg:m-auto max-lg:text-center">
               <h1>Our Services</h1>
+              <ul className="text-[#FFFFFFD1] text-[13px]   pt-[20px] flex flex-col gap-[8px]">
+                <li className="hover:text-[#ec7427] transition-all">
+                  <Link href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className="text-[11px]"
+                    />
+                    <span className="pl-[6px]"> Residential Construction</span>
+                  </Link>
+                </li>
+                <li className="hover:text-[#ec7427] transition-all">
+                  <Link href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className="text-[11px]"
+                    />
+                    <span className="pl-[6px]"> Residential Construction</span>
+                  </Link>
+                </li>
+                <li className="hover:text-[#ec7427] transition-all">
+                  <Link href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className="text-[11px]"
+                    />
+                    <span className="pl-[6px]"> Residential Construction</span>
+                  </Link>
+                </li>
+                <li className="hover:text-[#ec7427] transition-all">
+                  <Link href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className="text-[11px]"
+                    />
+                    <span className="pl-[6px]"> Residential Construction</span>
+                  </Link>
+                </li>
+                <li className="hover:text-[#ec7427] transition-all">
+                  <Link href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className="text-[11px]"
+                    />
+                    <span className="pl-[6px]"> Residential Construction</span>
+                  </Link>
+                </li>
+                <li className="hover:text-[#ec7427] transition-all">
+                  <Link href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className="text-[11px]"
+                    />
+                    <span className="pl-[6px]"> Residential Construction</span>
+                  </Link>
+                </li>
+              </ul>
             </div>
             {/* === */}
-            <div className="">
+            <div className="max-lg:text-center max-lg:m-auto">
               <h1>Information</h1>
+              <ul className="text-[#FFFFFFD1] text-[13px]   pt-[20px] flex flex-col gap-[8px]">
+                <li className="hover:text-[#ec7427] transition-all">
+                  <Link href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className="text-[11px]"
+                    />
+                    <span className="pl-[6px]"> About Us</span>
+                  </Link>
+                </li>
+                <li className="hover:text-[#ec7427] transition-all">
+                  <Link href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className="text-[11px]"
+                    />
+                    <span className="pl-[6px]"> FAQs</span>
+                  </Link>
+                </li>
+                <li className="hover:text-[#ec7427] transition-all">
+                  <Link href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className="text-[11px]"
+                    />
+                    <span className="pl-[6px]"> Our Projects</span>
+                  </Link>
+                </li>
+                <li className="hover:text-[#ec7427] transition-all">
+                  <Link href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className="text-[11px]"
+                    />
+                    <span className="pl-[6px]"> Testimonials</span>
+                  </Link>
+                </li>
+                <li className="hover:text-[#ec7427] transition-all">
+                  <Link href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className="text-[11px]"
+                    />
+                    <span className="pl-[6px]"> Contact Us</span>
+                  </Link>
+                </li>
+                <li className="hover:text-[#ec7427] transition-all">
+                  <Link href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className="text-[11px]"
+                    />
+                    <span className="pl-[6px]"> Privacy Policy</span>
+                  </Link>
+                </li>
+              </ul>
             </div>
             {/* === */}
-            <div className="">
-              <Link href="#">SERVICE INQUIRY</Link>
+            <div className="max-lg:m-auto max-lg:text-center">
+              <div className=" bg-[#EC7427] p-[5px] text-[12px] font-bold text-center rounded-[100px]">
+                SERVICE INQUIRY
+              </div>
+              <div className=" mt-[20px] flex flex-col gap-y-[20px]">
+                <div className=" rounded-[6px] bg-[#EC7427] p-[10px] ">
+                  <Link className="flex items-center gap-[20px]" href="#">
+                    <span className="text-[30px] ">
+                      <FontAwesomeIcon
+                        icon={faPhone}
+                        className="text-[#EC7427] bg-[#fff] h-[20px] w-[20px] p-[9px] rounded-[50%] "
+                      />
+                    </span>
+                    <div className=" text-[#fff]   font-bold">
+                      +88 123 456 789 <br />
+                      TALK TO AN EXPERT
+                    </div>
+                  </Link>
+                </div>
+
+                <ul className="text-[#FFFFFFD1] text-[13px] max-lg:m-auto max-lg:text-center ">
+                  <li>
+                    <Link href="" className="flex items-center gap-[10px]">
+                      <FontAwesomeIcon icon={faEnvelope} />
+                      <span>ismailsafha@gmail.com</span>
+                    </Link>
+                  </li>
+                  <li className="mt-[10px]">
+                    <Link href="" className="flex items-center gap-[10px]">
+                      <FontAwesomeIcon icon={faLocationDot} />
+                      <span>beni mellal maroc</span>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </footer>

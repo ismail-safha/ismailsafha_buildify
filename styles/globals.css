@@ -38,6 +38,12 @@ body {
   height: 700px;
 }
 
+@media (max-width: 400px) {
+  .banner img {
+    height: 900px !important;
+  }
+}
+
 .start {
   background-color: #ec7427;
   border-radius: 200px 200px 200px 200px;
@@ -57,7 +63,7 @@ body {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #ec7427;
-  padding: 6px 20px;
+  padding: 6px 40px;
   transition: background-color 0.5s ease;
   transition: color 0.5s ease;
 }
@@ -206,3 +212,15 @@ body {
 }
 
 /*  end PROJECTS */
+
+.mobile_true {
+  top: 107px;
+
+  right: 10px;
+  left: 9px;
+}
+
+.mobile_true.active {
+  /* z-index: 1; */
+  display: none;
+}
